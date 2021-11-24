@@ -1,7 +1,7 @@
 import math
 from tools.fraccion import Fraccion
 from decimal import *
-getcontext().prec = 256
+getcontext().prec = 64
 
 
 class McLaurin:

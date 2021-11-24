@@ -1,4 +1,5 @@
 from tools.polinomio import Polinomio
+from tools.entrada_datos import ingresar_datos, ingresar_consultas
 import os
 
 
@@ -54,31 +55,12 @@ def term_cuadrado_cubo(datos, tam):
     return total
 
 
-def inicializar_consultas(iteraciones):
-    print("\nIngresando consultas...\n")
-    consultas = []
-    for i in range(iteraciones):
-        consultas.append(float(input(f"Consulta [{i}]: ")))
-    return consultas
-
-
-def inicializar_datos(iteraciones):
-    print("\nIngresando datos...\n")
-    datos = [[], []]
-    for i in range(iteraciones):
-        datos[0].append(float(input(f"Dato [0][{i}]: ")))
-    for i in range(iteraciones):
-        datos[1].append(float(input(f"Dato [1][{i}]: ")))
-    return datos
-
-
 def iniciar_lagrange():
     os.system("clear")
     print("Polinomio de Lagrange\n")
     numero_datos = int(input("Numero de registros: "))
-    datos, fun = inicializar_datos(numero_datos), None
-    numero_consultas = int(input("\nNumero de consultas: "))
-    consultas = inicializar_consultas(numero_consultas)
+    datos, fun = ingresar_datos(numero_datos), None
+    consultas = ingresar_consultas()
     if numero_datos == 3:
         fun = Polinomio([term_cuadrado_cubo(datos, numero_datos), term_lineal_cuadrado(datos, numero_datos),
                          constante(datos, numero_datos)])

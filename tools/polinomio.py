@@ -16,8 +16,8 @@ class Polinomio:
         potencia_max, resultado = (len(self.__coeficientes) - 1), ""
         for index, coeficiente in enumerate(self.__coeficientes):
             if coeficiente != 0.0:
-                signo = "" if index == 0 else "+" if coeficiente > 0 else "-"
-                constante = abs(coeficiente) if coeficiente != 1 else ""
+                signo = "-" if coeficiente < 0.0 else "+" if index != 0 else ""
+                constante = abs(coeficiente) if coeficiente != 1 or index == (len(self.__coeficientes) - 1) else ""
                 potencia = potencia_max - index
                 incognita = f"x^{potencia}" if potencia > 1 else "x" if potencia == 1 else ""
                 resultado += f"{signo} {constante}{incognita} "

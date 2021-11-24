@@ -1,23 +1,6 @@
 from tools.recta import Recta
+from tools.entrada_datos import ingresar_datos, ingresar_consultas
 import os
-
-
-def ingresar_datos(longitud):
-    print(f"\nIngresando datos....\n")
-    datos = [[], []]
-    for i in range(longitud):
-        datos[0].append(float(input(f"Dato [0][{i}]: ")))
-    for i in range(longitud):
-        datos[1].append(float(input(f"Dato [1][{i}]: ")))
-    return datos
-
-
-def ingresar_consultas(iteraciones):
-    print(f"\nIngresando consultas....\n")
-    consultas = []
-    for i in range(iteraciones):
-        consultas.append(float(input(f"Consulta [{i}]: ")))
-    return consultas
 
 
 def calcular(datos, valor):
@@ -35,8 +18,8 @@ def calcular(datos, valor):
 def iniciar_lineal():
     os.system("clear")
     print(f"Interpolacion y Extrapolacion Lineal\n")
-    datos = ingresar_datos(int(input("Longitud de la tabla: ")))
-    consultas = ingresar_consultas(int(input("\nNumero de consultas: ")))
+    datos = ingresar_datos(int(input("Longitud: ")))
+    consultas = ingresar_consultas()
     for consulta in consultas:
         resultado = calcular(datos, consulta)
         if type(resultado) is Recta:
