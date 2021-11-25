@@ -56,9 +56,19 @@ def term_cuadrado_cubo(datos, tam):
 
 
 def iniciar_lagrange():
-    os.system("clear")
-    print("Polinomio de Lagrange\n")
+    os.system("cls")
+    print("Polinomio de Lagrange\n\n"
+          "Sitio Web disponible: https://yaelaram.github.io/MetodosNumericosProyecto/\n\n"
+          f"Instrucciones de uso:\n\n"
+          f"1. Ingresa la cantidad de registros, por el momento solo son soportadas tablas con tres o cuatro"
+          f"registros.\n"
+          f"2. Ingresa los registros separando el valor de X y Y por un espacio.\n"
+          f"   Ejemplo: El registro (7, -1) se ingresa de la forma '7 -1'\n"
+          f"3. Ingresa las consultas que desees, no hay limite, cada consulta debe estar separada por un espacio.\n"
+          f"   Ejemplo: Consulta los valores 2 y 4 se ingresa de la forma '2 4'\n"
+          f"4. Una vez termines de ingresar las consultas presiona Enter.\n")
     numero_datos = int(input("Numero de registros: "))
+    numero_datos = numero_datos if 3 == numero_datos == 4 else 4
     datos, fun = ingresar_datos(numero_datos), None
     consultas = ingresar_consultas()
     if numero_datos == 3:

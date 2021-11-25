@@ -16,13 +16,20 @@ def calcular(datos, valor):
 
 
 def iniciar_lineal():
-    os.system("clear")
-    print(f"Interpolacion y Extrapolacion Lineal\n")
+    os.system("cls")
+    print(f"Interpolacion y Extrapolacion Lineal\n\n"
+          f"Instrucciones de uso:\n\n"
+          f"1. Ingresa la cantidad de registros que tienes.\n"
+          f"2. Ingresa los registros separando el valor de X y Y por un espacio.\n"
+          f"   Ejemplo: El registro (7, -1) se ingresa de la forma '7 -1'\n"
+          f"3. Ingresa las consultas que desees, no hay limite, cada consulta debe estar separada por un espacio.\n"
+          f"   Ejemplo: Consulta los valores 2 y 4 se ingresa de la forma '2 4'\n"
+          f"4. Una vez termines de ingresar las consultas presiona Enter.\n")
     datos = ingresar_datos(int(input("Longitud: ")))
     consultas = ingresar_consultas()
     for consulta in consultas:
         resultado = calcular(datos, consulta)
         if type(resultado) is Recta:
-            print(f"\nRecta: {resultado.__str__()} \nResultado: {resultado.evaluar(consulta)}")
+            print(f"\nRecta: {resultado} \ny({consulta}): {resultado.evaluar(consulta)}")
         else:
-            print(f"\nResultado: {resultado}")
+            print(f"\ny({consulta}): {resultado}")

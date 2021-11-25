@@ -14,5 +14,11 @@ class Recta:
         return (self.__pendiente * x) + self.__ordenada_origen
 
     def __str__(self):
-        return f"y(x) = {self.__pendiente}x {'' if self.__ordenada_origen <= 0 else '+'}" \
-               f" {self.__ordenada_origen if self.__ordenada_origen != 0 else ''}"
+        signo_pendiente = "-" if self.__pendiente < 0.0 else ""
+        signo_ordenada = "-" if self.__ordenada_origen < 0.0 else "+" if self.__ordenada_origen > 0.0 else ""
+        pendiente = abs(self.__pendiente)
+        coeficiente_pendiente = "" if pendiente == 1 or pendiente == 0 else pendiente
+        ordenada = abs(self.__ordenada_origen)
+        coeficiente_ordenada = "" if ordenada == 1 or ordenada == 0 else ordenada
+        incognita = "x" if pendiente != 0 else ""
+        return f"y(x) = {signo_pendiente} {coeficiente_pendiente}{incognita} {signo_ordenada} {coeficiente_ordenada}"

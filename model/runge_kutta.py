@@ -1,9 +1,9 @@
 from decimal import *
-getcontext().prec = 64
+getcontext().prec = 128
 
 
 def evaluar(x, y):
-    return ((2 * x) + (x * (y ** 2))) / ((4 * y) + (y * (x ** 2)))
+    return ((3 * x) + 8) / (y - 1)
 
 
 def crear_k(xi, yi, h):
@@ -22,6 +22,13 @@ def iniciar_runge_kutta():
     print(f"\nPuntos:\n\nP_0 = ({xi}, {yi})")
     for i in range(iteraciones):
         k1, k2, k3, k4 = crear_k(xi, yi, h)
+        print(f"\nK1: {k1} \nK2: {k2} \nk3: {k3} \nK4: {k4}")
         xi += h
         yi = yi + ((h / 6) * (k1 + (2 * k2) + (2 * k3) + k4))
         print(f"P_{i + 1} = ({xi}, {yi})")
+
+
+if __name__ == "__main__":
+    iniciar_runge_kutta()
+
+
