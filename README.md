@@ -1,12 +1,10 @@
 # Proyecto de Métodos Numéricos
 
-El siguiente proyecto fue creado en Python 3.10.0, cuenta
-con las siguientes secciones:
-
-* Interpolación Lineal
-* Interpolación Cuadratica
-* Interpolación por Polinomio de Lagrange
-* Interpolación por Mínimos Cuadrados
+# Tabla de Contenidos
+1. [Menú Principal](#men-principal)
+2. [Interpolación Lineal](#interpolacin-lineal)
+3. [Interpolación Cuadratica](#interpolacin-cuadratica)
+4. [Método de Minimos Cuadrados](#mtodo-de-minimos-cuadrados)
 
 ## Menú Principal
 
