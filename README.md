@@ -1,10 +1,45 @@
 # Proyecto de Métodos Numéricos
 
-# Tabla de Contenidos
-1. [Menú Principal](#menu-principal)
-2. [Interpolación Lineal](#interpolacion-lineal)
-3. [Interpolación Cuadratica](#interpolacion-cuadratica)
-4. [Método de Minimos Cuadrados](#metodo-de-minimos-cuadrados)
+Este proyecto fue desarrollado utilizando Python 3.10.0 y el IDE PyCharm, para su correcto funcionamiento se
+recomienda el uso de la terminal de Windows (cmd o PowerShell), para más información consultar la sección 1 y 2.
+
+## Tabla de Contenidos
+1. [Requisitos Previos](#requisitos-previos)
+2. [Iniciar el Programa](#iniciar-el-programa)
+3. [Menú Principal](#menu-principal)
+4. [Interpolación Lineal](#interpolacion-lineal)
+5. [Interpolación Cuadratica](#interpolacion-cuadratica)
+6. [Método de Minimos Cuadrados](#metodo-de-minimos-cuadrados)
+
+## Requisitos Previos
+
+1. Tener instalado Python, lo puedes descargar desde la [página oficial](https://www.python.org/downloads/).
+
+## Iniciar el Programa
+
+Para iniciar el script siga las siguientes indicaciones:
+
+1. Abrir un nuevo terminal
+   - Presiona Windows + R
+   - Escribe 'cmd'
+   - Presiona Enter
+
+**Nota:** También puedes utilizar la terminal PowerShell la cual puedes obtener de forma gratuita en la Microsoft Store 
+de Windows 10 o Windows 11.
+
+2. Situar la terminal en el directorio donde descargo el proyecto e ingresar al directorio del mismo, en caso de haber
+clonado el repositorio puede evitar escribir '-master' en el nombre del directorio.
+```
+cd [path]/Proyecto_Metodos_Numericos-master
+```
+
+**Nota:** Una alternativa al paso 1 y 2 es abrir el explorador de Windows y buscar la ruta donde se descargó el proyecto
+abrir la carpeta, dar clic derecho y buscar en el menu contextual la opcion 'Abrir terminal aquí'.
+
+2. Escribir el siguiente comando y presionar ENTER:
+```
+py main.py
+```
 
 ## Menu Principal 
 
