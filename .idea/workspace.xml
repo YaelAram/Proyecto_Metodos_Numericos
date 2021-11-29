@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8782d55b-0c68-47f2-ba98-25d3be2865de" name="Changes" comment="Se agrego el comando ayuda en el menu principal para asistir al usuario sobre el funcionamiento del menu principal, se ha actualizado el archivo README.md para mostrar una descripcion mas detallada de cada seccion">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8782d55b-0c68-47f2-ba98-25d3be2865de" name="Changes" comment="Tabla de contenidos creada en README.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637725281670</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tabla de contenidos creada en README.md">
+      <created>1638164302979</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638164302979</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Metodo de Gauss Jordan y de interpolacion cuadratica creados, se mejoraron los metodos de ingresar_datos e ingresar_consultas ademas de enviarlos al archivo entrada_datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metodo de Gauss Jordan y de interpolacion cuadratica creados, se mejoraron los metodos de ingresar_datos e ingresar_consultas ademas de enviarlos al archivo entrada_datos" />
+    <MESSAGE value="Tabla de contenidos creada en README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tabla de contenidos creada en README.md" />
   </component>
 </project>

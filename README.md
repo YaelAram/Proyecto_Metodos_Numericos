@@ -1,12 +1,12 @@
 # Proyecto de Métodos Numéricos
 
 # Tabla de Contenidos
-1. [Menú Principal](#men-principal)
-2. [Interpolación Lineal](#interpolacin-lineal)
-3. [Interpolación Cuadratica](#interpolacin-cuadratica)
-4. [Método de Minimos Cuadrados](#mtodo-de-minimos-cuadrados)
+1. [Menú Principal](#menu-principal)
+2. [Interpolación Lineal](#interpolacion-lineal)
+3. [Interpolación Cuadratica](#interpolacion-cuadratica)
+4. [Método de Minimos Cuadrados](#metodo-de-minimos-cuadrados)
 
-## Menú Principal
+## Menu Principal 
 
 Esta sección es la primera que el usuario puede ver dentro del
 sistema, a partir de esta el usuario puede navegar por
@@ -65,7 +65,7 @@ programa termina en ese momento.
 
 Al presionar ENTER el sistema vuelve a mostrar el menú principal.
 
-## Interpolación Lineal
+## Interpolacion Lineal
 
 Este módulo permite realizar interpolación lineal a tablas
 con n datos asi como obtener los valores de n consultas y 
@@ -120,7 +120,7 @@ y(30.0): 1705.0
 y(10.0): 1204.0
 ```
 
-## Interpolación Cuadratica
+## Interpolacion Cuadratica
 
 Este módulo permite realizar interpolación cuadratica a tablas 
 con 3 datos asi como obtener los valores de n consultas y la
@@ -164,7 +164,7 @@ Funcion = y(x) =  2.0x^2 - 3.0x + 1.0
 y(0.0) = 1.0
 ```
 
-## Interpolación por Polinomio de Lagrange
+## Interpolacion por Polinomio de Lagrange
 
 Este módulo permite realizar interpolación por polinomio de 
 Lagrange a tablas con 3 o 4 datos asi como obtener los valores de 
@@ -206,7 +206,7 @@ Ecuacion:  x^2 - 2.0000000000000027x - 4.0
 y(5.0) = 10.999999999999986
 ```
 
-## Método de Minimos Cuadrados
+## Metodo de Minimos Cuadrados
 
 Este módulo permite aplicar el método de minimos cuadrados a
 tablas con n datos asi como obtener los valores de n consultas 
